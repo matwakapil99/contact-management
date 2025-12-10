@@ -4,7 +4,10 @@ export interface Contact {
   lastName: string;
   email: string;
   phone: string;
-  address?: string;
+  addressLine1: string;
+  addressLine2?: string;
+  state?: string;
+  pincode: string;
 }
 
 export interface ContactsState {
