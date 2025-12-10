@@ -1,0 +1,31 @@
+:root{ --bg:#f5f7fb; --card:#fff; --accent:#4f46e5; --muted:#6b7280; --danger:#ef4444 }
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{background:var(--bg);padding:32px}
+.app{max-width:980px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.brand{display:flex;flex-direction:column}
+.title{font-size:20px;font-weight:600}
+.subtitle{font-size:12px;color:var(--muted)}
+.controls{display:flex;gap:8px;align-items:center}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(79,70,229,0.12)}
+.search{padding:8px 12px;border-radius:8px;border:1px solid #e6e9f0;width:320px}
+.toolbar{display:flex;gap:8px;align-items:center}
+.card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 1px 4px rgba(11,15,28,0.06)}
+.list{margin-top:12px}
+.row{display:grid;grid-template-columns:32px 1fr 220px 200px 120px;gap:12px;padding:10px 8px;border-bottom:1px solid #f0f2f6;align-items:center}
+.row.header{font-weight:600;color:var(--muted);font-size:13px}
+.contact-name{font-weight:600}
+.small{font-size:13px;color:var(--muted)}
+.icon-btn{background:transparent;border:0;cursor:pointer;padding:4px;border-radius:6px}
+.checkbox{width:18px;height:18px}
+.modal-backdrop{position:fixed;inset:0;background:rgba(10,10,15,0.4);display:flex;align-items:center;justify-content:center}
+.modal{background:var(--card);padding:16px;border-radius:12px;width:540px;box-shadow:0 6px 30px rgba(11,15,28,0.15)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.input{padding:10px;border-radius:8px;border:1px solid #e6e9f0}
+.field-label{font-size:12px;color:var(--muted);margin-bottom:6px}
+.error{color:var(--danger);font-size:12px}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+.bulk-actions{display:flex;gap:8px;align-items:center}
+.small-muted{font-size:13px;color:var(--muted)}
